@@ -1,0 +1,15 @@
+.title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.datalayout {
+    margin-left: 2%;
+    margin-top: 1%;
+    display: flex;
+}
+li {
+    margin-bottom: 1%;
+}
+#car-service{
+    margin-left: 5%;
+}

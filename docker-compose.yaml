@@ -1,17 +1,18 @@
-version: '3'
+version: '2'
 services: 
-  car-service:
-    build: backend/home
-    image: car-serevice-v1
-    ports:
-      - "9001:9001"
-  home-service:
-    build: backend/home
-    image: home-service-v1
-    ports: 
-      - "9000:9000"
-  font-end:
-    build: fontend
-    image: fontent-v1
-    ports: 
-      - "3000:80"
+  frontend:
+      build: ./fontend
+      image: frontend:v1
+      ports: 
+        - 4200:80
+      
+  backend1:
+      build: ./backend/car
+      image: backend1
+      ports:
+        - 9001:9001
+  backend2:
+      build: ./backend/home
+      image: backend2
+      ports:
+        - 9000:9000
